@@ -43,7 +43,9 @@ tests:
         - emmet.core
         - emmet.core.feff
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
 
 about:
   summary: Core Emmet Library
